@@ -1,0 +1,230 @@
+	public static void main(String Args[]) {
+		
+	double amount;
+	double USDollar, australianDollar, canadianDollar, yen, euro, peso, pound, dong;
+	int choice;
+	DecimalFormat f = new DecimalFormat("##.##");
+	Scanner sc = new Scanner(System.in);
+	 
+    System.out.println("Choose one of the following choices:");
+    System.out.println("Enter 1: USDollar");
+    System.out.println("Enter 2: Australian");
+    System.out.println("Enter 3: Canadian");
+    System.out.println("Enter 4: Yen");
+    System.out.println("Enter 5: Euro");
+    System.out.println("Enter 6: Peso");
+    System.out.println("Enter 7: Pound");
+    System.out.println("Enter 8: Dong");
+
+    choice = sc.nextInt();
+
+    System.out.println("Enter the amount you want to convert?");
+    amount = sc.nextFloat();
+	
+    switch (choice)
+    {
+       case 1:  //USDollar
+
+          australianDollar = amount * 1.49;
+          System.out.println(amount + " USDollar = " + f.format(australianDollar) + " Australian Dollars");
+          
+          canadianDollar = amount * 1.36;
+          System.out.println(amount + " USDollar = " + f.format(australianDollar) + " Canadian Dollars");
+
+          yen = amount * 137;
+          System.out.println(amount + " USDollar = " + f.format(yen) + " Yen");
+
+          euro = amount / 1.20;
+          System.out.println(amount + " USDollar = " + f.format(euro) + " Euros");
+
+          peso = amount * 19.76;
+          System.out.println(amount + " USDollar = " + f.format(peso) + " Pesos");
+
+          pound = amount / 1.21;
+          System.out.println(amount + " USDollar = " + f.format(pound) + " Pound");
+          
+          dong = amount * 24000;
+          System.out.println(amount + " USDollar = " + f.format(dong) + " Dong");
+          break;
+
+
+       case 2:  //australianDollar
+
+
+           USDollar = amount / 1.49;
+           System.out.println(amount + " australianDollar = " + f.format(USDollar) + " USDollar");
+           
+           canadianDollar = amount / 1.1;
+           System.out.println(amount + " australianDollar = " + f.format(canadianDollar) + " Canadian Dollars");
+
+           yen = amount * 91.65;
+           System.out.println(amount + " australianDollar = " + f.format(yen) + " Yen");
+
+           euro = amount / 1.56;
+           System.out.println(amount + " australianDollar = " + f.format(euro) + " Euros");
+
+           peso = amount * 37.34;
+           System.out.println(amount + " australianDollar = " + f.format(peso) + " Pesos");
+
+           pound = amount / 1.81;
+           System.out.println(amount + " australianDollar = " + f.format(pound) + " Pound");
+           
+           dong = amount * 16048.08;
+           System.out.println(amount + " australianDollar = " + f.format(dong) + " Dong");
+
+       case 3: //canadianDollar
+
+           USDollar = amount / 1.37;
+           System.out.println(amount + " canadianDollar = " + f.format(USDollar) + " USDollar");
+           
+           australianDollar = amount * 1.09;
+           System.out.println(amount + " canadianDollar = " + f.format(australianDollar) + " Australian Dollars");
+
+           yen = amount * 100.30;
+           System.out.println(amount + " canadianDollar = " + f.format(yen) + " Yen");
+
+           euro = amount / 1.43;
+           System.out.println(amount + " canadianDollar = " + f.format(euro) + " Euros");
+
+           peso = amount * 40.87;
+           System.out.println(amount + " canadianDollar = " + f.format(peso) + " Pesos");
+
+           pound = amount / 1.6;
+           System.out.println(amount + " canadianDollar = " + f.format(pound) + " Pound");
+           
+           dong = amount * 17572.52;
+           System.out.println(amount + " canadianDollar = " + f.format(dong) + " Dong");
+
+          break;
+
+       case 4: //Yen
+
+           USDollar = amount / 136.98;
+           System.out.println(amount + " Yen = " + f.format(USDollar) + " USDollar");
+           
+           australianDollar = amount / 90.90;
+           System.out.println(amount + " Yen = " + f.format(australianDollar) + " Australian Dollars");
+           
+           canadianDollar = amount / 100;
+           System.out.println(amount + " Yen = " + f.format(australianDollar) + " Canadian Dollars");
+
+           euro = amount / 142.86;
+           System.out.println(amount + " Yen = " + f.format(euro) + " Euros");
+
+           peso = amount * 2.44;
+           System.out.println(amount + " Yen = " + f.format(peso) + " Pesos");
+
+           pound = amount / 166.6;
+           System.out.println(amount + " Yen = " + f.format(pound) + " Pound");
+           
+           dong = amount * 175.19;
+           System.out.println(amount + " Yen = " + f.format(dong) + " Dong");
+
+          break;
+
+       case 5:  //Euro
+    	   
+           USDollar = amount * 1.05;
+           System.out.println(amount + " Euro = " + f.format(USDollar) + " USDollar");
+
+           australianDollar = amount * 1.57;
+           System.out.println(amount + " Euro = " + f.format(australianDollar) + " Australian Dollars");
+           
+           canadianDollar = amount * 1.43;
+           System.out.println(amount + " Euro = " + f.format(australianDollar) + " Canadian Dollars");
+
+           yen = amount * 143.38;
+           System.out.println(amount + " Euro = " + f.format(yen) + " Yen");
+
+
+           peso = amount * 58.43;
+           System.out.println(amount + " Euro = " + f.format(peso) + " Pesos");
+
+           pound = amount / 1.16;
+           System.out.println(amount + " Euro = " + f.format(pound) + " Pound");
+           
+           dong = amount * 25119.60;
+           System.out.println(amount + " Euro = " + f.format(dong) + " Dong");
+           break;
+           
+       case 6: //Peso
+
+
+           USDollar = amount / 55.5;
+           System.out.println(amount + " Peso = " + f.format(USDollar) + " USDollar");
+
+           australianDollar = amount / 37.4;
+           System.out.println(amount + " Peso = " + f.format(australianDollar) + " Australian Dollars");
+           
+           canadianDollar = amount / 41.6;
+           System.out.println(amount + " Peso = " + f.format(australianDollar) + " Canadian Dollars");
+
+           yen = amount * 2.45;
+           System.out.println(amount + " Peso = " + f.format(yen) + " Yen");
+
+           euro = amount / 58.82;
+           System.out.println(amount + " Peso = " + f.format(euro) + " Euros");
+
+           pound = amount / 66.6;
+           System.out.println(amount + " Peso = " + f.format(pound) + " Pound");
+           
+           dong = amount * 429.92;
+           System.out.println(amount + " Peso = " + f.format(dong) + " Dong");
+          break;
+          
+       case 7: //Pound
+
+           USDollar = amount * 1.21;
+           System.out.println(amount + " Pound = " + f.format(USDollar) + " USDollar");
+
+           australianDollar = amount * 1.81;
+           System.out.println(amount + " Pound = " + f.format(australianDollar) + " Australian Dollars");
+           
+           canadianDollar = amount * 1.66;
+           System.out.println(amount + " Pound = " + f.format(australianDollar) + " Canadian Dollars");
+
+           yen = amount * 166.24;
+           System.out.println(amount + " Pound = " + f.format(yen) + " Yen");
+
+           euro = amount * 1.16;
+           System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
+
+           peso = amount * 67.79;
+           System.out.println(amount + " Pound = " + f.format(peso) + " Pesos");
+           
+           dong = amount * 29117.04;
+           System.out.println(amount + " Pound = " + f.format(dong) + " Dong");
+          break;
+          
+       case 8: //Dong
+    	   
+           USDollar = amount / 23809.52;
+           System.out.println(amount + " Dong = " + f.format(USDollar) + " USDollar");
+
+           australianDollar = amount / 16129.03;
+           System.out.println(amount + " Dong = " + f.format(australianDollar) + " Australian Dollars");
+           
+           canadianDollar = amount / 17543.86;
+           System.out.println(amount + " Dong = " + f.format(australianDollar) + " Canadian Dollars");
+
+           yen = amount / 175.44;
+           System.out.println(amount + " Dong = " + f.format(yen) + " Yen");
+
+           euro = amount / 25000;
+           System.out.println(amount + " Dong = " + f.format(euro) + " Euros");
+
+           peso = amount / 434.78;
+           System.out.println(amount + " Dong = " + f.format(peso) + " Pesos");
+           
+           pound = amount / 29411.76;
+           System.out.println(amount + " Dong = " + f.format(pound) + " Pounds");
+        
+
+        //Default case
+       default:
+          System.out.println("Invalid Input");	
+          
+	}
+	sc.close();
+}
+}
