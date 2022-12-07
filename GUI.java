@@ -8,10 +8,20 @@ public class GUI extends Bank{
 public GUI(double total, double USDollar, double australianDollar, double canadianDollar, double yen,
 		double euro, double peso, double poundSterling, double dong, double interestRate) {
 	super(total, USDollar, australianDollar, canadianDollar, yen, euro, peso, poundSterling, dong, interestRate);
+	
 	// TODO Auto-generated constructor stub
 }
 
-
+public static void random() {
+	double min = 999.99;
+	double max = 99999.99;
+	double rand = (int) ((Math.random() * (max - min)) + min);
+	String theBalance = String.format( "$" + "%.2f", rand);
+	JOptionPane.showMessageDialog(null, theBalance);
+}
+public static void deposit() {
+	//
+}
 
 public static void converter() {
 	try{
@@ -23,7 +33,7 @@ public static void converter() {
         JFrame f = new JFrame("Currency Converter");
   
         // Creating two labels
-        JLabel l0, l1, l2, l3, l4, l5, l6, l7 ,l8, l9;
+        JLabel l0, l1, l2, l3, l4, l5, l6, l7 ,l8;
   
 
         JTextField t1, t2, t3, t4, t5, t6, t7 ,t8;
@@ -236,7 +246,9 @@ public static void converter() {
 	
 	 // Driver code
     public static void main(String args[]) {
+    	random();
         converter();
+        
     }
 
 	@Override
@@ -292,4 +304,3 @@ public static void converter() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-}
